@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ciclo while</title>
+</head>
+<body>
+    <script>
+
+let pares = 0;
+let impares = 0;
+
+
+let contar1 = 1;
+
+
+while (contar1 <= 5) {
+    let contar2 = 1;
+
+
+    while (contar2 <= 5) {
+        let resultado = contar1 * contar2;
+        console.log(contar1+"x"+ contar2+ "="+resultado);
+
+
+        if (resultado % 2 == 0) {
+            console.log("buzz");
+            pares++;
+        } else {
+            console.log("bass");
+            impares++; 
+        }
+        contar2++;
+    }
+    console.log("");
+    contar1++;
+}
+
+
+console.log("Cantidad de números pares:" +pares);
+console.log("Cantidad de números impares:" +impares);
+</script>
+</body>
+</html>

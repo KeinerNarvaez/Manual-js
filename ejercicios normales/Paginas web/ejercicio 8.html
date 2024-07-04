@@ -1,0 +1,46 @@
+<!-- Calcular el pago total de una personas -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pago total de persona</title>
+</head>
+<body>
+
+    <script>
+
+        let diasTrabajados=30;
+        let valorDia=70000;
+        let sueldo;
+        let pension;
+        let arl;
+        let salud;
+        let descuento;
+        let pagoTotal;
+
+        sueldo= diasTrabajados*valorDia; //la multiplicacion del sueldo de la persona
+
+        salud= sueldo * 0.12;
+
+        pension= sueldo * 0.16;
+
+        arl= sueldo * 0.052;
+
+        descuento= salud+pension+arl
+
+        pagoTotal= sueldo-descuento
+
+        console.log("El pago total de la persona es " + pagoTotal);
+
+
+        
+
+   
+
+
+    </script>
+    
+</body>
+</html>

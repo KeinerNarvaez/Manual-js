@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 6</title>
+</head>
+<body>
+    <script>
+let salario= 1500000;
+let dias=31;
+let valorDia;
+let salud;
+let pension ;
+let arl;
+let transporte;
+let salarioMin;
+let deducible;
+
+valorDia=salario/dias;
+salario= dias*valorDia;
+
+console.log("salario de la persona es " + salario +"\n");
+
+if(salarioMin*2<salario){
+    salrio= salario+ transporte;
+}
+else{
+    salario= salario+0;
+}
+
+salud = salario*0.12;
+pension = salario*0.16;
+arl = salario*0.052;
+
+console. log ("la salud: " + salud +"\n");
+console. log ("la pension: " + pension +"\n");
+console. log ("el arl: " + arl +"\n");
+
+if(salarioMin*4<salario){
+ salario= salario * 0.04;
+}
+
+else{
+   salario = salario + 0;
+}
+
+deducible= salud+pension+arl;
+
+salario= salario-deducible;
+
+console. log ("total de pagar: " + salario);
+
+
+
+
+
+    </script>
+</body>
+</html>

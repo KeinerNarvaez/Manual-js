@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabla del 9 hasta 5, par o impar</title>
+</head>
+<body>
+    <script>
+        let contar;
+        let numero=9;
+        let resultado;
+        
+        for (let contar = 1; contar <= 5; contar++) {
+            resultado=contar*numero;
+            if(resultado % 2 == 0){
+                console.log(contar+"X"+numero+"="+resultado);
+                console.log(resultado+" es par \n");
+
+            }else{
+                console.log(contar+"X"+numero+"="+resultado);
+                console.log(resultado+ " es impar \n");
+                
+            }
+        }
+    </script>
+</body>
+</html>
